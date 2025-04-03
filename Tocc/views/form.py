@@ -15,7 +15,7 @@ def form() -> rx.Component:
             rx.form(
                 rx.vstack(
                     rx.input(placeholder="Nombre", name="name"),
-                    rx.input(placeholder="Correo electrónico", name="email"),
+                    rx.input(placeholder="Email ", name="email"),
                     #rx.textarea(placeholder="Mensaje", name="message"),
                     rx.button("Enviar", 
                               type_="submit", 
