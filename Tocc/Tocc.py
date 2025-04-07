@@ -6,6 +6,7 @@ from Tocc.styles.styles import Size
 from Tocc.views.header import header
 from Tocc.views.form import form
 from Tocc.views.services import services
+from Tocc.views.company_info import company_info
 
 
 class State(rx.State):
@@ -61,6 +62,7 @@ def nosotros() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
+                company_info(),
                 bg=styles.Color.MORADO_CLARO.value,
                 width="100%",
                 padding_x=Size.DEFAULT.value,
